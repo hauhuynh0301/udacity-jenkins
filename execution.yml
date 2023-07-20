@@ -1,0 +1,14 @@
+execution:
+  - concurrency: 50
+    ramp-up: 2m
+    hold-for: 3m
+
+    scenario: Choose Flight
+
+
+scenarios:
+  TwoCheckout:
+    default-address: https://sandbox.2checkout.com/
+    requests:
+      - /
+      - /gimme-404
