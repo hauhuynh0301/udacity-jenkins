@@ -45,7 +45,7 @@ public class UserController {
 	
 	@PostMapping("/create")
 	public ResponseEntity<User> createUser(@RequestBody CreateUserRequest createUserRequest) {
-		log.info("createUser with CreateUserRequest {}",createUserRequest);
+		log.info("createUser with CreateUserRequest {}",createUserRequest );
 		User user = new User();
 		user.setUsername(createUserRequest.getUsername());
 		Cart cart = new Cart();
